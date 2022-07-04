@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -45,11 +46,14 @@ const Contact = () => {
               letterClass={letterClass}
             />
           </h1>
-          <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
-          </p>
+          <div className="details">
+            <p>
+              I am interested in freelance opportunities - especially ambitious
+              or large projects. However, if you have other request or question,
+              don't hesitate to contact me using below form either.
+            </p>
+          </div>
+
           <div className="contact-form">
             <form ref={refForm} onSubmit={(e) => sendEmail(e)}>
               <ul>
@@ -96,6 +100,19 @@ const Contact = () => {
           Lalitpur
           <br />
           <span>koinchsushan@gmail.com</span>
+        </div>
+        <div className="map-wrap">
+          <MapContainer center={[27.717245, 85.323959]} zoom={13}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[27.717245, 85.323959]}>
+              <Popup>
+                Sushan lives here, come over for a cup of coffee. :)
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="ball-rotate" />

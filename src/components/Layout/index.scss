@@ -39,8 +39,7 @@
 }
 
 .about-page,
-.contact-page,
-.portfolio-page {
+.contact-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -82,6 +81,28 @@
         opacity: 0.6;
         line-height: 18x;
       }
+    }
+    .details::before {
+      content: '<p>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      position: absolute;
+      margin-top: -22px;
+      opacity: 0.6;
+      line-height: 18x;
+      color: #ffd700;
+    }
+    .details::after {
+      content: '</p>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      position: absolute;
+      margin-top: -16px;
+      margin-right: 10px;
+      right: 0;
+      opacity: 0.6;
+      line-height: 18x;
+      color: #ffd700;
     }
     p {
       font-size: 14px;

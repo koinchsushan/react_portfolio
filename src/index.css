@@ -7,8 +7,7 @@ body {
   padding: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
-  background: #022c43;
-  /* background: #02393e; */
+  background: rgba(4, 91, 98, 1);
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;

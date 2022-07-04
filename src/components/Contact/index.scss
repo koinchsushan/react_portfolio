@@ -1,11 +1,33 @@
 .contact-form {
   width: 100%;
-  margin-top: 400px;
+  padding-top: 400px;
 
   ul {
     padding: 0;
     margin: 0;
 
+    &::before {
+      content: '<form>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      position: absolute;
+      opacity: 0.6;
+      line-height: 18x;
+      color: #ffd700;
+      left: 0;
+      margin-top: -30px;
+    }
+    &::after {
+      content: '</form>';
+      font-family: 'La Belle Aurore';
+      font-size: 18px;
+      position: absolute;
+      right: 0;
+      opacity: 0.6;
+      line-height: 18x;
+      color: #ffd700;
+      margin-right: 10px;
+    }
     li {
       padding: 0;
       margin: 0;
@@ -32,7 +54,8 @@
   input[type='email'] {
     width: 100%;
     border: none;
-    background: #115173;
+
+    background: #02393e;
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -43,7 +66,7 @@
   textarea {
     width: 100%;
     border: none;
-    background: #115173;
+    background: #02393e;
     color: #fff;
     font-size: 16px;
     padding: 20px;
@@ -65,10 +88,44 @@
 }
 .info-map {
   position: absolute;
-  background: #000;
-  top: 50px;
-  right: 30%;
-  z-index: 999;
-  width: 267px;
+  background: rgba(4, 91, 98, 1);
+  top: 5%;
+  right: 5%;
+  z-index: 5;
+  width: auto;
+  height: auto;
   padding: 20px;
+  color: #fff;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0;
+  animation: fadeIn 3s 1.5s forwards;
+  border-radius: 10px;
+
+  span {
+    font-size: 12px;
+    display: block;
+    padding-top: 20px;
+    color: #ffd700;
+  }
+}
+
+.map-wrap {
+  background: rgba(3, 253, 216, 0.1);
+  float: right;
+  width: 53%;
+  height: 100%;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  animation: backInRight 1s 1.2s forwards;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  font-size: 12px;
 }
