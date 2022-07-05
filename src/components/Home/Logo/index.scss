@@ -7,7 +7,8 @@
   right: 15%;
   bottom: 0;
   left: auto;
-  opacity: 0;
+  // opacity: 0;    uncoment for gsap
+  opacity: 1;
 
   svg {
     width: 100%;
@@ -24,7 +25,7 @@
     left: 0;
     margin: auto;
     width: 100%;
-    opacity: 0;
+    // opacity: 0; uncomment for gsap
     transform: rotateZ(30deg);
     z-index: 1;
   }

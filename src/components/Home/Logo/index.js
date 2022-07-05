@@ -4,39 +4,39 @@ import LogoS from '../../../assets/images/logo-s.png'
 import { gsap } from 'gsap-trial'
 
 import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-gsap.registerPlugin(DrawSVGPlugin)
+// gsap.registerPlugin(DrawSVGPlugin)
 
 const Logo = () => {
   const bgRef = useRef()
   const outlineLogoRef = useRef()
   const solidLogoRef = useRef()
 
-  useEffect(() => {
-    gsap
-      .timeline()
-      .from(bgRef.current, {
-        opacity: 1,
-      })
-      .to(outlineLogoRef.current, {
-        drawSVG: 0,
-        duration: 4,
-        opacity: 1,
-      })
+  // useEffect(() => {
+  //   gsap
+  //     .timeline()
+  //     .from(bgRef.current, {
+  //       opacity: 1,
+  //     })
+  //     .to(outlineLogoRef.current, {
+  //       drawSVG: 0,
+  //       duration: 4,
+  //       opacity: 1,
+  //     })
 
-    gsap.fromTo(
-      solidLogoRef.current,
-      {
-        opacity: 0,
-        duration: 1,
-        delay: 1,
-      },
-      {
-        opacity: 1,
-        delay: 3,
-        duration: 3,
-      }
-    )
-  }, [])
+  //   gsap.fromTo(
+  //     solidLogoRef.current,
+  //     {
+  //       opacity: 0,
+  //       duration: 1,
+  //       delay: 1,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       delay: 3,
+  //       duration: 3,
+  //     }
+  //   )
+  // }, [])
 
   return (
     <div className="logo-container" ref={bgRef}>
