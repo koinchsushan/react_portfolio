@@ -54,7 +54,6 @@
   input[type='email'] {
     width: 100%;
     border: none;
-
     background: #02393e;
     height: 50px;
     font-size: 16px;
@@ -141,6 +140,21 @@
     form {
       ul {
         width: 90%;
+        font-size: small;
+
+        input[type='text'],
+        input[type='email'] {
+          height: 40px;
+          font-size: 14px;
+        }
+
+        textarea {
+          min-height: 60px;
+        }
+
+        li {
+          margin-bottom: 5px;
+        }
       }
     }
   }
