@@ -71,3 +71,11 @@
     transform: rotateX(90deg);
   }
 }
+
+@media (max-width: 800px) {
+  .stage-cube-cont {
+    left: 20%;
+    width: auto;
+    overflow: none;
+  }
+}

@@ -3,12 +3,12 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faAngular,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
   faReact,
+  faBootstrap,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 
@@ -33,17 +33,18 @@ const About = () => {
           </h1>
           <div className="details">
             <p>
-              I'm very ambitious front-end developer looking for a role in
-              established IT company with the opportunity to work with the
-              latest technologies on challenging and diverse projects.
+              I'm an ambitious front-end developer and a enthusiast learner open
+              for a role in IT/ Software company whose aims are aligned with
+              common interest and goal to work with the latest technologies and
+              challenging projects.
             </p>
             <p>
-              I'm quietly confident, naturally curious, and perpetually working
-              on improving my chops one design problem at a time.
+              I'm quiet confident with my skills and consistently trying to
+              imporve my work ethics as a single or team player to provide
+              quality outcomes.
             </p>
             <p>
-              If I need to define myself in one sentence that would be a family
-              person, father of a beautiful daughter, a sports fanatic,
+              You would probably know me as a family person, a gaming fanatic,
               photography enthusiast, and tech-obsessed!!!
             </p>
           </div>
@@ -51,7 +52,7 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cube-spinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faBootstrap} color="#563D7C" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />

@@ -129,3 +129,19 @@
 .leaflet-popup-content-wrapper .leaflet-popup-content {
   font-size: 12px;
 }
+
+@media (max-width: 800px) {
+  .map-wrap {
+    display: none;
+  }
+  .info-map {
+    display: none;
+  }
+  .contact-form {
+    form {
+      ul {
+        width: 90%;
+      }
+    }
+  }
+}

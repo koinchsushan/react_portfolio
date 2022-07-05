@@ -48,9 +48,9 @@ const Contact = () => {
           </h1>
           <div className="details">
             <p>
-              I am interested in freelance opportunities - especially ambitious
-              or large projects. However, if you have other request or question,
-              don't hesitate to contact me using below form either.
+              Here, you can contact me as I am interested in working and
+              freelancing opportunities. You can also write here for other
+              request or ask questions. Don't hesitate!
             </p>
           </div>
 
@@ -93,11 +93,7 @@ const Contact = () => {
         <div className="info-map">
           Sushan Sunuwar,
           <br />
-          Kathmandu,
-          <br />
-          Kathmandu 220000
-          <br />
-          Lalitpur
+          Kathmandu
           <br />
           <span>koinchsushan@gmail.com</span>
         </div>

@@ -130,3 +130,17 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  .text-zone {
+    padding-left: 10%;
+    width: 75%;
+  }
+
+  .about-page,
+  .contact-page {
+    .text-zone {
+      width: 75%;
+    }
+  }
+}

@@ -8,7 +8,6 @@
   bottom: 0;
   left: auto;
   // opacity: 0;    uncoment for gsap
-  opacity: 1;
 
   svg {
     width: 100%;
@@ -33,4 +32,12 @@
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10;
+}
+
+@media (max-width: 800px) {
+  .logo-container {
+    opacity: 0.3;
+    right: 0;
+    overflow: hidden;
+  }
 }
