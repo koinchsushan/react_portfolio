@@ -33,19 +33,16 @@ const About = () => {
           </h1>
           <div className="details">
             <p>
-              I'm an ambitious front-end developer and a enthusiast learner open
-              for a role in IT/ Software company whose aims are aligned with
-              common interest and goal to work with the latest technologies and
-              challenging projects.
+              I'm an ambitious Frontend Developer with 3 years of experience creating high-quality web applications using React and Angular. I have contributed to impactful projects, ranging from data-driven quoting systems for aerospace clients to enhancing a U.S. health benefits platform serving over 450,000 users through improved data accuracy and automation.
             </p>
             <p>
-              I'm quiet confident with my skills and consistently trying to
-              imporve my work ethics as a single or team player to provide
-              quality outcomes.
+              Now an MSc Data Analytics graduate from London Metropolitan University, I have strengthened my expertise in statistical modeling, machine learning, and data-informed product development, with the goal of bridging intuitive user experiences with meaningful analytical insights to build solutions that perform and deliver real-world value.
             </p>
             <p>
-              You would probably know me as a family person, a gaming fanatic,
-              photography enthusiast, and tech-obsessed!!!
+              I am confident in my abilities and continue to improve my skills and work ethic, both as an independent contributor and as a collaborative team player to consistently deliver quality outcomes.
+            </p>
+            <p>
+              Outside the professional space, you’ll likely find me exploring new tech, gaming, enjoying sports, or spending time with family.
             </p>
           </div>
         </div>

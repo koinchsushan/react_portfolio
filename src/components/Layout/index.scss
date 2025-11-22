@@ -82,6 +82,11 @@
         line-height: 18x;
       }
     }
+    .details {
+      p {
+        text-align: justify;
+      }
+    }
     .details::before {
       content: '<p>';
       font-family: 'La Belle Aurore';

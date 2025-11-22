@@ -9,20 +9,23 @@ import Loader from 'react-loaders'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['u', 's', 'h', 'a', 'n', ',']
+
   const jobArray = [
-    'W',
+    'T',
     'e',
-    'b',
+    'c',
+    'h',
     ' ',
-    'D',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
+    'E',
+    'n',
+    't',
+    'h',
+    'u',
+    's',
+    'i',
+    'a',
+    's',
+    't',
     '.',
   ]
 
@@ -59,7 +62,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Frontend Developer/ JavaScript Expert/ Student</h2>
+          <h2>Frontend Developer/ Data Analyst</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

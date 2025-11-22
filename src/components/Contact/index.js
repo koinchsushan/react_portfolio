@@ -18,12 +18,13 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
+    // removed emailjs for security purposes
     emailjs
       .sendForm(
-        'service_75kfxbj',
-        'template_xqg91k4',
+        'service_id',
+        'template_id',
         refForm.current,
-        'PyGmUNMg0X_-nmxSn'
+        'public_key'
       )
       .then(
         () => {
@@ -93,17 +94,17 @@ const Contact = () => {
         <div className="info-map">
           Sushan Sunuwar,
           <br />
-          Kathmandu
+          London
           <br />
           <span>koinchsushan@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[27.717245, 85.323959]} zoom={13}>
+          <MapContainer center={[51.50588008454316, -0.13251018675401063]} zoom={13}>
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <Marker position={[27.717245, 85.323959]}>
+            <Marker position={[51.50814584244242, -0.12718145002636952]}>
               <Popup>
                 Sushan lives here, come over for a cup of coffee. :)
               </Popup>
